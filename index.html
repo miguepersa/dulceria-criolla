@@ -1,96 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulcería Criolla</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title-bar">
+        <p class="title-bar-text">Dulcería Criolla</p>
+    </div>
+    <nav class="navbar navbar-expand-sm container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <button class="btn btn-light nav-btn brn-secondary btn-sm">
+                    <li><a class="nav-link" href="#historia">Historia</a></li>
+                </button>
+                <button class="btn btn-light nav-btn brn-secondary btn-sm">
+                    <li><a class="nav-link" href="#ingredientes">Ingredientes</a></li>
+                </button>
+                <button class="btn btn-light nav-btn brn-secondary btn-sm">
+                    <li><a class="nav-link" href="#ejemplos">Ejemplos</a></li>
+                </button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <section id="historia">
+            <h2 class="mb-4 text-underline">Historia de la dulcería criolla venezolana</h2>
+            <p class="justify">
+                La dulcería criolla venezolana tiene sus raíces en la mezcla de culturas indígenas, europeas y africanas que han dado forma a la identidad venezolana. 
+                Los indígenas legaron ingredientes como la yuca, el maíz y el cacao, mientras que los europeos aportaron técnicas de elaboración y nuevos ingredientes 
+                como la leche, la mantequilla y el azúcar. Los africanos, por su parte, introdujeron frutas tropicales como el mango y el coco.
+            </p>
+            <p class="justify">
+                A lo largo de los siglos, esta mezcla de influencias ha dado lugar a una amplia variedad de dulces únicos y deliciosos. Desde los humildes arequipe 
+                y quesillo hasta las elaboradas tortas negras y majarete, la dulcería criolla venezolana refleja la creatividad y el ingenio del pueblo venezolano.
+            </p>
+            <img src="img/1.jpg" class="center-img" alt="dulceria criolla">
+        </section>
+
+        <section id="ingredientes" class="mt-5">
+            <h2 class="mb-4 text-underline">Ingredientes básicos de la dulcería criolla venezolana</h2>
+            <ol>
+                <li>
+                    <p><strong>Cereales:</strong></p>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Maíz:</strong> Es uno de los ingredientes más importantes en la dulcería criolla venezolana. Se utiliza para preparar una gran variedad de dulces, como las arepitas dulces, las hallaquitas, el majarete, el gofio y el dulce de jojoto.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Arroz:</strong> También se utiliza con frecuencia en la preparación de dulces, como el arroz con leche, el quesillo y el dulce de leche cortada.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Harina de trigo:</strong> Se utiliza para hacer tortas, galletas, polvorosas y otros dulces horneados.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        <strong>Frutas tropicales:</strong> Las frutas tropicales son abundantes en Venezuela y se utilizan en la elaboración de una gran variedad de dulces, como el dulce de lechosa, el dulce de guayaba, el dulce de mango, el papelón con limón y las conservas.
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Productos lacteos:</strong></p>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Leche:</strong> Se utiliza en la preparación de dulces como el arroz con leche, el quesillo, el dulce de leche cortada y las natillas.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Mantequilla:</strong> Se utiliza para darle sabor y textura a muchos dulces, como las tortas, las galletas, el pan de navidad y las polvorosas.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Edulcorantes:</strong></p>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Azúcar:</strong> Es el edulcorante más utilizado en la dulcería criolla venezolana. Se utiliza para endulzar una gran variedad de dulces, desde los más simples hasta los más elaborados.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Papelón:</strong> Es un edulcorante natural que se obtiene del jugo de la caña de azúcar. Se utiliza para preparar dulces como el guarapo, el papelón con limón y las catalinas.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Melaza:</strong>  Se utiliza para darle un sabor más intenso y un color más oscuro a algunos dulces, como el dulce de lechosa y el pan de navidad.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Especias:</strong></p>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Canela:</strong> Es una de las especias más utilizadas en la dulcería criolla venezolana. Se utiliza para darle un sabor aromático a muchos dulces, como el tres leches, el majarete y el dulce de lechosa.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Clavos de olor:</strong> Se utilizan para darle un sabor más especiado a algunos dulces, como el dulce de lechosa y el pan de navidad.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Nuez moscada:</strong> Se utiliza para darle un sabor más cálido y complejo a algunos dulces, como el quesillo y el dulce de lechosa.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Otros Ingredientes:</strong></p>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Huevos:</strong> Se utilizan en la preparación de muchos dulces, como las tortas, las galletas, el quesillo y el majarete.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Chocolate:</strong> Se utiliza en la preparación de dulces como el tres leches, el quesillo y el pan de navidad.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Ron:</strong> Se utiliza para darle un toque de sabor a algunos dulces, como el tres leches y el pan de navidad.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section id="ejemplos" class="mt-5">
+            <h2 class="mb-4 text-underline">Ejemplos de dulces criollos venezolanos</h2>
+            <ul>
+                <li>
+                    <p>
+                        <strong>Arequipe:</strong> El arequipe es un producto lácteo hecho a base de leche, azúcar y, en algunos casos, vainilla o canela. Se obtiene cociendo la leche a fuego lento durante un tiempo prolongado, lo que carameliza los azúcares y le da su característico color marrón oscuro, sabor dulce y textura espesa.
+                        El arequipe es un dulce muy versátil que se puede disfrutar de diversas maneras:
+                    </p>
+                    <ul>
+                        <li><strong>Solo:</strong> Como un postre por sí mismo, untado en una rebanada de pan o galleta.</li>
+                        <li><strong>En postres:</strong> Como ingrediente en tortas, tartas, helados, flanes y otros postres.</li>
+                        <li><strong>Acompañante:</strong> Para acompañar frutas, quesos o café.</li>
+                        <li><strong>Relleno:</strong> Para rellenar alfajores, tequeños y otros dulces.</li>
+                    </ul>
+
+                    <div class="img-postre-container">
+                        <img src="https://misaboracolombia.com/cdn/shop/articles/arequipe4_1200x1200.jpg?v=1607222906" alt="arequipe1" class="img-postre">
+                        <img src="https://colombia.co/sites/default/files/marca-pais/images/wp-content/uploads/2022/10/Dulce-de-leche-arequipe.jpg" alt="arequipe2" class="img-postre">
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        <strong>Quesillo:</strong> El quesillo, también conocido como flan en algunos países, es un postre cremoso y suave que se prepara a base de huevos, leche, azúcar y, en algunos casos, vainilla o canela. Se caracteriza por su textura gelatinosa y su sabor dulce y ligeramente caramelizado.
+                    </p>
+                    <p>
+                        El quesillo es un postre muy popular en Venezuela y en otros países de América Latina, como Argentina, Chile, Colombia, El Salvador, Guatemala, Honduras, México y Nicaragua. Se suele servir frío y se puede decorar con frutas frescas, crema chantilly o sirope de caramelo.
+                    </p>
+                    <div class="img-postre-container">
+                        <img src="https://www.recetasnestle.com.ve/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/d94a460abdf527fd274abbcb0306a163.webp" alt="quesillo1" class="img-postre">
+                        <img src="https://mmedia.estampas.com/18856/quesillo-sin-huequitos-81792.jpg" alt="quesillo2" class="img-postre">
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        <strong>Torta negra:</strong> La torta negra, también conocida como torta navideña o pan de navidad, es un postre tradicional venezolano que se consume principalmente durante la época decembrina. Se caracteriza por su sabor intenso y especiado, su textura húmeda y su color oscuro, que proviene de las frutas secas y la melaza que se utilizan en su preparación.
+                    </p>
+                    <div class="img-postre-container">
+                        <img src="https://i0.wp.com/commememucho.com/wp-content/uploads/2021/12/bizcocho-negro-portada.jpg" alt="torta-negra1" class="img-postre">
+                        <img src="https://www.recetavenezolana.com/wp-content/uploads/2019/02/RFB-1802-5-tortanegra.jpg" alt="torta-negra2" class="img-postre">
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        <strong>Majarete:</strong> El majarete es un postre tradicional de origen indígena que se consume en varios países de América Latina, incluyendo Venezuela, Cuba, República Dominicana, Puerto Rico y Costa Rica. Se caracteriza por su textura cremosa y sabor dulce, a base de maíz, leche, coco y azúcar.
+                    </p>
+                    <div class="img-postre-container">
+                        <img src="https://okdiario.com/img/2020/11/03/receta-de-majarete-655x368.jpg" alt="majarete1" class="img-postre">
+                        <img src="http://radiomundial.com.ve/wp-content/uploads/2018/10/el-majarete-un-antiguo-dulce-criollo-venezolano502941.jpg" alt="majarete2" class="img-postre">
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        <strong>Dulce de lechoza:</strong> El dulce de lechosa, también conocido como cabellito de ángel o manjar blanco, es un postre tradicional venezolano que se prepara principalmente durante la época navideña y de Semana Santa. Se elabora con la pulpa verde de la lechosa (papaya), azúcar, canela y clavos de olor, lo que le da un sabor dulce y especiado, una textura suave y un color ámbar característico.
+                    </p>
+                    <div class="img-postre-container">
+                        <img src="https://notiapure.com.ve/wp-content/uploads/2023/08/1-Dulce-de-Lechosa-1.jpg" alt="dulce-lechoza1" class="img-postre">
+                        <img src="https://cielitorosado.com/wp-content/uploads/2022/08/DULCE-DE-PAPAYA-sm.jpg" alt="dulce-lechoza2" class="img-postre">
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        <strong>Chicha:</strong> La chicha venezolana, también conocida como chicha criolla o simplemente chicha, es una bebida dulce no alcohólica de Venezuela hecha principalmente a base de arroz o sémola de trigo —entre otros ingredientes de base— y leche de vaca, a la que suele agregársele leche condensada, canela, chispas de chocolate o Sirope.
+                    </p>
+                    <p>
+                        Es una bebida muy espesa que se toma fría con hielo. Esta bebida no es fermentada y es de uso comercial en el país. Usualmente es vendida de forma ambulante por los llamados «chicheros», así como en locales especializados conocidos como «chicherías».
+                    </p>
+                    <div class="img-postre-container">
+                        <img src="https://tureporte.com/wp-content/uploads/2018/08/11-3-e1533830573334.jpg" alt="chicha1" class="img-postre">
+                        <img src="https://mmedia.notitarde.com.ve/19380/foto-rrss-18562.jpg" alt="chicha2" class="img-postre">
+                    </div>
+                </li>
+            </ul>
+            <p class="justify">
+                La dulcería criolla venezolana es una parte importante de la cultura y la identidad venezolana. Sus sabores únicos y deliciosos han conquistado paladares 
+                alrededor del mundo. Si tienen la oportunidad, les invito a probar algunos de estos dulces tradicionales y descubrir por qué son tan especiales para el pueblo venezolano.
+            </p>
+        </section>
+    </div>
+
+    <footer class="footer text-white py-3 mt-5">
+        <p class="footer-text">&copy; 2024 Miguel Perez 15-11126. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
